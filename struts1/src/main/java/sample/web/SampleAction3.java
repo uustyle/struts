@@ -8,7 +8,6 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 
 import sample.biz.service.SampleService;
 
@@ -16,9 +15,10 @@ import sample.biz.service.SampleService;
  * AutowiringRequestProcessorを使用したサンプル
  */
 public class SampleAction3 extends Action {
+
     @Autowired
     private SampleService sampleService;
-    
+
     public ActionForward execute(ActionMapping mapping, ActionForm form,
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
