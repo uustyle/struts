@@ -26,6 +26,8 @@ public class SampleAction3 extends Action {
         String fullName = sampleService.createFullName(
                 sampleForm.getFirstName(), sampleForm.getLastName());
         request.setAttribute("fullName", fullName);
+
+
         return mapping.findForward("success");
     }
 }
